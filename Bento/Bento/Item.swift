@@ -1,5 +1,5 @@
 //
-//  Person.swift
+//  Item.swift
 //  Bento
 //
 //  Created by Minghao Liu on 2/1/16.
@@ -8,14 +8,14 @@
 
 import Foundation
 
-class Person {
+class Item {
     var name: String
-    var total: Double
-    var id: Int
+    var price: Double
+    var peopleArray: [Int]
     
-    init(name: String) {
+    init(name: String, price: Double){
         self.name = name
-        self.total = 0
-        self.id = Utils.getID()
+        self.price = price
+        self.peopleArray = []
     }
 }
