@@ -17,51 +17,26 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8fU-22-baG">
-                                <rect key="frame" x="79" y="484" width="217" height="101"/>
-                                <color key="backgroundColor" red="0.079811759293079376" green="0.86658108234405518" blue="0.95593971014022827" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <state key="normal" title="Button">
-                                    <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="didTouchFood:" destination="BYZ-38-t0r" eventType="touchUpInside" id="CbT-Bb-4nF"/>
-                                    <segue destination="LRa-76-fnD" kind="popoverPresentation" popoverAnchorView="8fU-22-baG" id="ySA-Nw-gon">
-                                        <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES" right="YES"/>
-                                    </segue>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kDA-jP-bPe">
-                                <rect key="frame" x="79" y="335" width="217" height="101"/>
+                                <rect key="frame" x="79" y="130" width="217" height="101"/>
                                 <color key="backgroundColor" red="0.079811759293079376" green="0.86658108234405518" blue="0.95593971014022827" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <state key="normal" title="Button">
+                                <state key="normal" title="New Bill">
                                     <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="didTouchTrip:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ade-r1-9W7"/>
-                                    <segue destination="LRa-76-fnD" kind="popoverPresentation" popoverAnchorView="kDA-jP-bPe" id="Yg3-ke-idX">
-                                        <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES" right="YES"/>
-                                    </segue>
+                                    <segue destination="LRa-76-fnD" kind="show" id="Yg3-ke-idX"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4mR-7u-W5Z">
-                                <rect key="frame" x="79" y="185" width="217" height="101"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8fU-22-baG">
+                                <rect key="frame" x="79" y="404" width="217" height="101"/>
                                 <color key="backgroundColor" red="0.079811759293079376" green="0.86658108234405518" blue="0.95593971014022827" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <state key="normal" title="Button">
+                                <state key="normal" title="Results">
                                     <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="didTouchShopping:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Pxe-BJ-eT2"/>
-                                    <segue destination="LRa-76-fnD" kind="popoverPresentation" popoverAnchorView="4mR-7u-W5Z" id="tbN-gq-R63">
-                                        <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES" right="YES"/>
-                                    </segue>
+                                    <segue destination="LRa-76-fnD" kind="show" id="ySA-Nw-gon"/>
                                 </connections>
                             </button>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="What would you like to split?" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="rMI-2g-miI">
-                                <rect key="frame" x="67" y="49" width="240" height="86"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="28"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
@@ -114,9 +89,7 @@
                                 <color key="backgroundColor" red="0.0070228478871285915" green="0.91381967067718506" blue="0.99921613931655884" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="Button"/>
                                 <connections>
-                                    <segue destination="hvD-DA-0HP" kind="popoverPresentation" popoverAnchorView="hbN-hV-HuN" id="Sik-a2-iQQ">
-                                        <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES" right="YES"/>
-                                    </segue>
+                                    <action selector="addPerson:" destination="LRa-76-fnD" eventType="touchUpInside" id="C8P-MZ-NEx"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -157,9 +130,7 @@
                                 <rect key="frame" x="104" y="617" width="166" height="42"/>
                                 <state key="normal" title="Calculate"/>
                                 <connections>
-                                    <segue destination="jG2-4V-5Ze" kind="popoverPresentation" popoverAnchorView="gEL-k1-viH" id="s4q-Wb-dLd">
-                                        <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES" right="YES"/>
-                                    </segue>
+                                    <segue destination="jG2-4V-5Ze" kind="show" id="s4q-Wb-dLd"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -204,6 +175,6 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="tbN-gq-R63"/>
+        <segue reference="Yg3-ke-idX"/>
     </inferredMetricsTieBreakers>
 </document>

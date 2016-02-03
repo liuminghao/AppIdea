@@ -20,13 +20,5 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
-    @IBAction func didTouchShopping(sender: UIButton) {
-    }
-    
-    @IBAction func didTouchTrip(sender: UIButton) {
-    }
-    
-    @IBAction func didTouchFood(sender: UIButton) {
-    }
 }
 
