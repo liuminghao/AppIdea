@@ -16,6 +16,7 @@
 		C9A302661C606BDD0025086E /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9A302651C606BDD0025086E /* Utils.swift */; };
 		C9A302681C606DCC0025086E /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9A302671C606DCC0025086E /* Item.swift */; };
 		C9A3026A1C606DF00025086E /* Split.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9A302691C606DF00025086E /* Split.swift */; };
+		C9A3026C1C61546D0025086E /* SelectPeopleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9A3026B1C61546D0025086E /* SelectPeopleViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		C9A302651C606BDD0025086E /* Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
 		C9A302671C606DCC0025086E /* Item.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 		C9A302691C606DF00025086E /* Split.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Split.swift; sourceTree = "<group>"; };
+		C9A3026B1C61546D0025086E /* SelectPeopleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectPeopleViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +67,7 @@
 				C9784FE91C605CD500D6D909 /* model */,
 				C9784FD51C6057FE00D6D909 /* AppDelegate.swift */,
 				C9784FD71C6057FE00D6D909 /* ViewController.swift */,
+				C9A3026B1C61546D0025086E /* SelectPeopleViewController.swift */,
 				C9784FD91C6057FE00D6D909 /* Main.storyboard */,
 				C9784FDC1C6057FE00D6D909 /* Assets.xcassets */,
 				C9784FDE1C6057FE00D6D909 /* LaunchScreen.storyboard */,
@@ -158,6 +161,7 @@
 				C9A302681C606DCC0025086E /* Item.swift in Sources */,
 				C9784FE81C605C5300D6D909 /* Person.swift in Sources */,
 				C9784FD81C6057FE00D6D909 /* ViewController.swift in Sources */,
+				C9A3026C1C61546D0025086E /* SelectPeopleViewController.swift in Sources */,
 				C9784FD61C6057FE00D6D909 /* AppDelegate.swift in Sources */,
 				C9A3026A1C606DF00025086E /* Split.swift in Sources */,
 				C9A302661C606BDD0025086E /* Utils.swift in Sources */,

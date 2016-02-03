@@ -24,6 +24,7 @@
                                     <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
+                                    <action selector="didTouchFood:" destination="BYZ-38-t0r" eventType="touchUpInside" id="CbT-Bb-4nF"/>
                                     <segue destination="LRa-76-fnD" kind="popoverPresentation" popoverAnchorView="8fU-22-baG" id="ySA-Nw-gon">
                                         <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES" right="YES"/>
                                     </segue>
@@ -36,6 +37,7 @@
                                     <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
+                                    <action selector="didTouchTrip:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ade-r1-9W7"/>
                                     <segue destination="LRa-76-fnD" kind="popoverPresentation" popoverAnchorView="kDA-jP-bPe" id="Yg3-ke-idX">
                                         <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES" right="YES"/>
                                     </segue>
@@ -48,6 +50,7 @@
                                     <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
+                                    <action selector="didTouchShopping:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Pxe-BJ-eT2"/>
                                     <segue destination="LRa-76-fnD" kind="popoverPresentation" popoverAnchorView="4mR-7u-W5Z" id="tbN-gq-R63">
                                         <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES" right="YES"/>
                                     </segue>
@@ -68,10 +71,10 @@
             </objects>
             <point key="canvasLocation" x="244.5" y="311.5"/>
         </scene>
-        <!--View Controller-->
+        <!--Select People View Controller-->
         <scene sceneID="orm-Aj-MWh">
             <objects>
-                <viewController id="LRa-76-fnD" sceneMemberID="viewController">
+                <viewController id="LRa-76-fnD" customClass="SelectPeopleViewController" customModule="Bento" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="0C9-at-Dfr"/>
                         <viewControllerLayoutGuide type="bottom" id="TI1-gd-0GF"/>
@@ -120,6 +123,9 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="peopleCollection" destination="5im-zp-h3B" id="6eN-oX-z5f"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SDM-0U-RyG" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -198,6 +204,6 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="Yg3-ke-idX"/>
+        <segue reference="tbN-gq-R63"/>
     </inferredMetricsTieBreakers>
 </document>
