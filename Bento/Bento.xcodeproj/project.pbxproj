@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C366865C1C62E409002DE36E /* ItemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C366865B1C62E409002DE36E /* ItemViewController.swift */; };
+		C366865F1C62E515002DE36E /* ItemTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C366865D1C62E515002DE36E /* ItemTableViewCell.swift */; };
+		C36686601C62E515002DE36E /* ItemTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C366865E1C62E515002DE36E /* ItemTableViewCell.xib */; };
 		C9784FD61C6057FE00D6D909 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9784FD51C6057FE00D6D909 /* AppDelegate.swift */; };
 		C9784FD81C6057FE00D6D909 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9784FD71C6057FE00D6D909 /* ViewController.swift */; };
 		C9784FDB1C6057FE00D6D909 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C9784FD91C6057FE00D6D909 /* Main.storyboard */; };
@@ -20,6 +23,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C366865B1C62E409002DE36E /* ItemViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemViewController.swift; sourceTree = "<group>"; };
+		C366865D1C62E515002DE36E /* ItemTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemTableViewCell.swift; sourceTree = "<group>"; };
+		C366865E1C62E515002DE36E /* ItemTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ItemTableViewCell.xib; sourceTree = "<group>"; };
 		C9784FD21C6057FE00D6D909 /* Bento.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Bento.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C9784FD51C6057FE00D6D909 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C9784FD71C6057FE00D6D909 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -66,12 +72,15 @@
 			children = (
 				C9784FE91C605CD500D6D909 /* model */,
 				C9784FD51C6057FE00D6D909 /* AppDelegate.swift */,
+				C366865B1C62E409002DE36E /* ItemViewController.swift */,
 				C9784FD71C6057FE00D6D909 /* ViewController.swift */,
 				C9A3026B1C61546D0025086E /* SelectPeopleViewController.swift */,
 				C9784FD91C6057FE00D6D909 /* Main.storyboard */,
 				C9784FDC1C6057FE00D6D909 /* Assets.xcassets */,
 				C9784FDE1C6057FE00D6D909 /* LaunchScreen.storyboard */,
 				C9784FE11C6057FE00D6D909 /* Info.plist */,
+				C366865D1C62E515002DE36E /* ItemTableViewCell.swift */,
+				C366865E1C62E515002DE36E /* ItemTableViewCell.xib */,
 			);
 			path = Bento;
 			sourceTree = "<group>";
@@ -145,6 +154,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C36686601C62E515002DE36E /* ItemTableViewCell.xib in Resources */,
 				C9784FE01C6057FE00D6D909 /* LaunchScreen.storyboard in Resources */,
 				C9784FDD1C6057FE00D6D909 /* Assets.xcassets in Resources */,
 				C9784FDB1C6057FE00D6D909 /* Main.storyboard in Resources */,
@@ -159,6 +169,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				C9A302681C606DCC0025086E /* Item.swift in Sources */,
+				C366865F1C62E515002DE36E /* ItemTableViewCell.swift in Sources */,
+				C366865C1C62E409002DE36E /* ItemViewController.swift in Sources */,
 				C9784FE81C605C5300D6D909 /* Person.swift in Sources */,
 				C9784FD81C6057FE00D6D909 /* ViewController.swift in Sources */,
 				C9A3026C1C61546D0025086E /* SelectPeopleViewController.swift in Sources */,
