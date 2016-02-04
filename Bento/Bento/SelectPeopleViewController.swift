@@ -13,6 +13,7 @@ class SelectPeopleViewController: UIViewController, UICollectionViewDataSource, 
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        peopleCollection.registerClass(UICollectionViewCell.self, forCellWithReuseIdentifier: "Cell")
     }
     
     override func didReceiveMemoryWarning() {
@@ -24,7 +25,7 @@ class SelectPeopleViewController: UIViewController, UICollectionViewDataSource, 
     //   --------- NEED TO FIGURE THIS OUT ------------
     
     func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 1
+        return 9
     }
     
     func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
@@ -60,7 +61,7 @@ class SelectPeopleViewController: UIViewController, UICollectionViewDataSource, 
             print("Cancelled !!")
         }
         
-        var alert = UIAlertController(title: "Enter Name", message: "", preferredStyle: UIAlertControllerStyle.Alert)
+        let alert = UIAlertController(title: "Enter Name", message: "", preferredStyle: UIAlertControllerStyle.Alert)
         alert.addTextFieldWithConfigurationHandler(configurationTextField)
         alert.addAction(UIAlertAction(title: "Done", style: UIAlertActionStyle.Default, handler:{ (UIAlertAction)in
             self.createPerson(tField.text!)
