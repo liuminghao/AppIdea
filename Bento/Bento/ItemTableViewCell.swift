@@ -12,13 +12,16 @@ class ItemTableViewCell: UITableViewCell {
 
     @IBOutlet weak var itemNameTextField: UITextField!
     @IBOutlet weak var priceTextField: UITextField!
+    @IBOutlet weak var randomButton: UIButton!
     
     override func awakeFromNib() {
+        print("awake from nib")
         super.awakeFromNib()
-        // Initialization code
+        self.backgroundColor = UIColor.greenColor()
     }
 
     override func setSelected(selected: Bool, animated: Bool){
+        print ("set selected")
         super.setSelected(selected, animated: animated)
 
         // Configure the view for the selected state

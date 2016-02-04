@@ -11,6 +11,8 @@ import UIKit
 class ItemViewController: UIViewController, UITableViewDataSource {
 
     @IBOutlet weak var itemTableView: UITableView!
+    
+    var cellCount: Int = 1
     override func viewDidLoad() {
         super.viewDidLoad()
         itemTableView.dataSource = self
@@ -25,22 +27,23 @@ class ItemViewController: UIViewController, UITableViewDataSource {
     
     @IBAction func addItem(sender: UIButton) {
         print("Add item")
+        cellCount = cellCount + 1
         itemTableView.reloadData()
     }
     
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         print("table view 1")
-        return 1
+        print (cellCount)
+        return cellCount
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         print("table view 2")
-        var cell = itemTableView.dequeueReusableCellWithIdentifier("Test cell")
-        if (cell == nil) {
-            cell = ItemTableViewCell()
-        }
-        return cell!
+        let cellIdentifier = "Cell"
+        let cell = tableView.dequeueReusableCellWithIdentifier(cellIdentifier, forIndexPath: indexPath) as! ItemTableViewCell
+//        cell.backgroundColor = UIColor.redColor()
+        return cell
     }
 
     
